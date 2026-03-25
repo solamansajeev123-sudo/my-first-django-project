@@ -1,5 +1,12 @@
-<form method="POST">
+<form action="" method="POST">
   {% csrf_token %}
-  <input type="text" name="title" />
-  <button type="submit">Submit</button>
+  <label>
+    Username
+    <input type="text" name="title" />
+  </label>
+  <label>
+    Content
+    <textarea name="content"></textarea>
+  </label>
+  <button type="submit">Save</button>
 </form>
